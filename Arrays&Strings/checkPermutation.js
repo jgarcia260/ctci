@@ -71,9 +71,7 @@ function checkPermutationA3(s1, s2) {
   if (s1.length !== s2.length) return false;
   let sortedS1 = s1.split('').sort().join('');
   let sortedS2 = s2.split('').sort().join('');
-  console.log(sortedS1, 'first string')
-  console.log(sortedS2, 'second string')
-  return sortedS1 === sortedS2
+  return sortedS1 === sortedS2;
 }
 
 let testA3 = checkPermutationA3('aaaab ', ' baaaa');
