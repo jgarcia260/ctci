@@ -30,6 +30,13 @@ function even_fib(integer) {
 // let iterationSample = even_fib(4000000);
 // console.log(iterationSample)
 
-// function recursionEvenFib(num, total=0) {
+//10
+function recursionEvenFib(num, total=0, first=1, second=2) { //10, 10, 8,
+  if(second > num) return total;
+  if(second % 2 === 0) total += second;
+  total = recursionEvenFib(num, total, second, first + second);
+  return total
+}
 
-// }
+let recurseSample = recursionEvenFib(4000000);
+console.log(recurseSample)//4613732
