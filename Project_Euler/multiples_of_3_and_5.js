@@ -25,5 +25,5 @@ function multiplesOf3And5(integer, total=0) {
   return total;
 }
 
-let recursionSample = multiplesOf3And5(10);
+let recursionSample = multiplesOf3And5(1000);
 console.log(recursionSample)
