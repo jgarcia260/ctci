@@ -39,8 +39,13 @@ function createMatrix(n ,m) {
 
 function latticePaths(n, m) {
   let matrix = createMatrix(n, m);
+  //update row
   for (let i = 0; i < matrix.length; i++) {
     matrix[0][i] = i + 2
+  }
+
+  //update col
+  for (let i = 0; i < matrix[0].length; i++) {
     matrix[i][0] = i + 2
   }
 
@@ -55,5 +60,5 @@ function latticePaths(n, m) {
   return matrix[matrix.length - 1][matrix.length - 1];
 }
 
-let sample = latticePaths(20, 20);
+let sample = latticePaths(2, 2);
 console.log(sample)
